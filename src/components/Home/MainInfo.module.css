@@ -1,0 +1,72 @@
+.main {
+    /* font-family: 'Share Tech Mono', monospace; */
+    /* font-family: 'Silkscreen', cursive; */
+
+    font-family: 'Anonymous Pro', monospace;
+}
+.beforeStart{
+    height:25rem;
+}
+.start, .mid, .end{
+height:55rem;
+padding:2rem;
+}
+
+.start {
+    display:flex;
+    justify-content:start;
+}
+.start .line {
+    margin-left:25rem;
+    display:flex;
+    width: 0.2rem;
+    height: 50rem;
+    background-color:aqua;
+}
+.start .intro {
+    /* font-family: 'Archivo Black', sans-serif; */
+    letter-spacing:0.1rem;
+    font-size: 8rem;
+    font-weight: 1000;
+    display: flex;
+    gap:2rem;
+}
+t-in.intro {
+    opacity: 1;
+    transition: opacity .5s;
+}
+t-out.intro {
+    opacity: 0;
+    transition: opacity .25s;
+}
+.start .intro span:nth-child(1) {
+    color:rgb(160, 159, 159);
+}
+
+.start .info {
+    margin-left:1rem;
+    font-size: 1.7rem;
+}
+
+.start .info .name {
+    margin-left:1rem;
+    display: flex;
+    gap:1rem;
+    margin-top:1rem;
+    letter-spacing:0.1rem;
+    color:rgb(132, 0, 255);
+
+}
+
+.start .info .fieldWeb, .start .info .fieldCyber {
+    margin-left:1rem;
+    color:rgb(92, 95, 95);
+
+}
+
+.start .info .fieldWeb {
+    margin-top : 1rem;
+}
+.start .info .fieldCyber {
+    margin-top : 0.5rem;
+}
