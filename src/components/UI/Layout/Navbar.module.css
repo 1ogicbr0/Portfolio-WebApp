@@ -24,6 +24,7 @@
 }
 
 .links {
+    color:aqua;
     width: 50%;
     display: flex;
     gap: 1.5rem;
@@ -31,6 +32,8 @@
     font-size:0.8rem;
 }
 .links .navlink{
+    color:white;
+    text-decoration: none;
     padding:0.5rem;
 }
 
