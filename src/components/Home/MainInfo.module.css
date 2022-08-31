@@ -5,9 +5,67 @@
     background-color:#14131b;
 
 }
-.beforeStart{
-    height:25rem;
+/* Scroll Down */
+.title {
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    margin-bottom:5rem;
+    font-size: 2rem;
 }
+.beforeStart{
+    height:55rem;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.scroll-downs {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    background-color:#121825;
+    box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
+    width: 10rem;
+    padding: 2rem 2rem;
+    height: 20rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+    display: flex;
+    justify-content:center;
+  }
+  .scroller {
+
+    font-size: 5rem;
+    margin-top:1rem;
+    justify-content:center;
+    height:5rem;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(10rem); opacity: 0;}
+  }
+/*  */
+
+
+
+
 .start, .mid, .end{
 height:50rem;
 padding:2rem;
