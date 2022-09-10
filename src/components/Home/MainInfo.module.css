@@ -2,7 +2,7 @@
     /* font-family: 'Share Tech Mono', monospace; */
     /* font-family: 'Silkscreen', cursive; */
     font-family: 'Anonymous Pro', monospace;
-    background-color:#14131b;
+    background-color:#0e1212;
 
 }
 /* Scroll Down */
@@ -99,14 +99,7 @@ padding:2rem;
     display: flex;
     gap:2rem;
 }
-t-in.intro {
-    opacity: 1;
-    transition: opacity .5s;
-}
-t-out.intro {
-    opacity: 0;
-    transition: opacity .25s;
-}
+
 .start .intro span:nth-child(1) {
     color:rgb(160, 159, 159);
 }
@@ -115,14 +108,15 @@ t-out.intro {
     font-size: 1.7rem;
 }
 
-.start .info .name {
+.start .info .name{
     margin-left:1rem;
     display: flex;
+    font-size: 2rem;
+    font-weight: 1000;
     gap:1rem;
     margin-top:1rem;
     letter-spacing:0.1rem;
-    color:rgb(132, 0, 255);
-
+    color: #639cd9;
 }
 
 .start .info .fieldWeb, .start .info .fieldCyber {
@@ -140,15 +134,55 @@ t-out.intro {
 
 .mid {
     display:flex;
-    justify-content:start;
     align-items: center;
-
+    font-family: "Roboto Mono", monospace;
+    letter-spacing:-2.2px;
+    font-size:32px;
 }
 .mid .info {
     height:auto;
 }
 
+.mid .info .midText1,.mid .info .midText2,.mid .info .midText3,.mid .info .midText4{
+    margin-top:1rem;
+}
+
+.mid .info .midText1{
+    font-size:4rem
+}
+.mid .info .midText2{
+    font-size:3rem
+}
+.mid .info .midText3{
+    font-size:2rem
+}
+.mid .info .midText4{
+    font-size:1.2rem
+}
 .end {
     display:flex;
     justify-content:start;
+    font-family: "Roboto Mono", cursive;
+    letter-spacing:-2.2px;
+    font-size:32px;
+    align-items:center;
+}
+.end .info .endText1,.end .info .endText2,.end .info .endText4,.end .info .endText5{
+    margin-top:1rem;
+}
+.end .info .endText1{
+    font-family: 'Share Tech Mono',monospace ;
+    color:rgb(132, 0, 255);
+    letter-spacing:-0.3rem;
+    font-size: 5rem;
+    font-weight: 1000;
+}
+.end .info .endText2, .end .info .endText3{
+    font-size: 2.5rem;
+}
+.end .info .endText4{
+    font-size: 2.5rem;
+}
+.end .info .endText5{
+    font-size: 2.2rem;
 }

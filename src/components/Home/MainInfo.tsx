@@ -5,7 +5,7 @@ import {MotionPathPlugin} from "gsap/MotionPathPlugin"
 import { useEffect, useRef } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faR } from "@fortawesome/free-solid-svg-icons";
-import {gsapGoUp} from './gsapHelper'
+import {gsapStartGoUp, gsapMidGoUp,gsapEndGoUp} from './gsapHelper'
 library.add(faR);
 
 const MainInfo = () => {
@@ -32,8 +32,8 @@ const MainInfo = () => {
       .to("#scroll", {
         scrollTrigger: {
           trigger: "#scroll",
-          start: "-20 250",
-          end: "+=300",
+          start: "-50 250",
+          end: "+=400",
           scrub: 1,
           toggleActions: "restart pause reverse pause",
 
@@ -44,16 +44,14 @@ const MainInfo = () => {
         opacity: 0,
         duration: 3,
       })
-      gsapGoUp();
-      const t2 = gsap.timeline();
-      gsap.set("#line",{xPercent:-50,yPercent:-50,transformOrigin:"50% 50%"})
-      t2.to("#line",{
-        duration:5,
-        motionPath:{
-          path:"M40.546,224.82 C48.144,14.824 28.509,24.477 101.516,24.609 423.972,25.189 284.606,24.142 322.862,24.053 494.027,23.638 461.747,10.905 461.741,58.574 461.73,133.786 460.127,89.596 457.32,217.693 ",
-          autoRotate:true,
-        }
-      })
+      gsapStartGoUp();
+      gsapMidGoUp();
+      gsapEndGoUp();
+      // const t2 = gsap.timeline();
+      // t2.from("#line",{
+      //   duration:10,
+      //   opacity: 0,
+      // })
       // const t2 = gsap.timeline({scrollTrigger: {
       //   trigger: "#text2",
       //   start: "190 center",
@@ -140,23 +138,23 @@ const MainInfo = () => {
 
       <div className={styles.start} id="start" >
         <div className={styles.left}>
-          <div className={styles.line} id="line"></div>
+          <div className={styles.line} id="line1"></div>
         </div>
-        <div className={styles.right} id="right">
+        <div className={styles.right} id="rightStart">
           <div className={styles.info}>
-            <div className={styles.intro} id="text1">
+            <div className={styles.intro} id="startText1">
               <span>$:~</span>
               <span>whoami</span>
             </div>
-            <div className={styles.name} id="text2">
+            <div className={styles.name} id="startText2">
               <span>Muhammad</span>
               <span>Shehryaar</span>
               <span>Khan</span>
             </div>
-            <div className={styles.fieldWeb} id="text3">
+            <div className={styles.fieldWeb} id="startText3">
               Creative Web Developer
             </div>
-            <div className={styles.fieldCyber} id="text4">
+            <div className={styles.fieldCyber} id="startText4">
               Bug Bounty Hunter
             </div>
           </div>
@@ -165,35 +163,33 @@ const MainInfo = () => {
 
       <div className={styles.mid} id="mid">
         <div className={styles.left}>
-          <div className={styles.line}></div>
+          <div className={styles.line} id="line2"></div>
         </div>
-        <div className={styles.right}>
+        <div className={styles.right} id="rightMid">
           <div className={styles.info}  ref={startRef}>
-            <div>From Pakistan to help the world</div>
-            <div>I did my Olevels from OPF College</div>
-            <div>and A-levels from Roots International School</div>
-            <div>
-              I am currently doing my bachelors in Cyber Security from Air
+            <div className={styles.midText1} id="midText1">From <span style={{color:'green',fontWeight:1000}}>Pakistan</span> to help the <span style={{color:'#639cd9',fontWeight:800}}>world!</span></div>
+            <div className={styles.midText2} id="midText2">I did my Olevels from OPF College</div>
+            <div className={styles.midText3} id="midText3">and A-levels from Roots International School</div>
+            <div className={styles.midText4} id="midText4">
+              Currently doing my bachelors in Cyber Security from Air
               University
             </div>
           </div>
         </div>
       </div>
 
-      <div className={styles.end}>
+      <div className={styles.end} id="end">
         <div className={styles.left}>
-          <div className={styles.line}></div>
+          <div className={styles.line}id="line3"></div>
         </div>
+        <div className={styles.right} id="rightEnd">
         <div className={styles.info}>
-          <div>Motive?</div>
-          <div>
-            The main thing that motivates me is to stuck in a problem and figure
-            most efficient way to get out of it
-          </div>
-          <div>Creating extraordinary websites using different tecnologies</div>
-          <div>
-            Learning about new technologies to find bugs and secure them
-          </div>
+          <div className={styles.endText1} id="endText1">Motive<span style={{color:'rgb(80, 0, 155)'}}>?</span></div>
+          <div className={styles.endText2} id="endText2">The main thing that motivates me is to figure out most efficient</div>
+          <div className={styles.endText3} id="endText2">way to solve a complex-problem, when stuck in it.</div>
+          <div className={styles.endText4} id="endText3">Creating extraordinary websites using different tecnologies</div>
+          <div className={styles.endText5} id="endText4">Learning about new technologies to find bugs and secure them.</div>
+        </div>
         </div>
       </div>
       <div>END</div>
