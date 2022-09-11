@@ -1,0 +1,33 @@
+.skillsTitle{
+    font-family: "Share Tech Mono", monospace;
+    margin-top:2rem;
+    font-weight:1000;
+    font-size:3rem;
+}
+
+.skills{
+    font-family: 'Anonymous Pro', sans-serif, monospace;
+    display:flex;
+    font-size: 1.2rem;
+    width: 100%;
+    letter-spacing:0.2rem;
+    word-spacing: -0.4rem;
+    color:grey;
+    font-weight: 1000;
+    margin-top:1rem;
+    justify-content:start;
+}
+
+.skills1{
+    width:30%;
+    margin-left: 0.3rem;
+}
+.skills1 div,.skills2 div, .skills3 div{
+    margin-top:0.4rem;
+}
+.skills2{
+    width:33%;
+}
+.skills3{
+    width:35%;
+}

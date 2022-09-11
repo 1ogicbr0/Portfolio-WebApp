@@ -8,10 +8,13 @@
 /* Scroll Down */
 .title {
     text-align:center;
+    font-family: 'Silkscreen' ;
+    font-weight: 550;
+    letter-spacing: -0.2rem;
     display:flex;
     justify-content:center;
     margin-bottom:5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .beforeStart{
     height:55rem;
@@ -67,7 +70,7 @@
 
 
 .start, .mid, .end{
-height:50rem;
+height:20rem;
 padding:2rem;
 }
 
@@ -160,6 +163,7 @@ padding:2rem;
     font-size:1.2rem
 }
 .end {
+    height:60rem;
     display:flex;
     justify-content:start;
     font-family: "Roboto Mono", cursive;
@@ -172,7 +176,7 @@ padding:2rem;
 }
 .end .info .endText1{
     font-family: 'Share Tech Mono',monospace ;
-    color:rgb(132, 0, 255);
+    color:#8400ff;
     letter-spacing:-0.3rem;
     font-size: 5rem;
     font-weight: 1000;
@@ -185,4 +189,23 @@ padding:2rem;
 }
 .end .info .endText5{
     font-size: 2.2rem;
+}
+
+.end .info .endText6{
+    scale: 0;
+    text-align: center;
+    user-select: none;
+    position:absolute;
+    top:40%;
+    font-weight: 1000;
+    font-family: 'Share Tech Mono',monospace ;
+    word-spacing: -1rem;
+    letter-spacing:-1rem;
+    width:60rem;
+    font-size: 10rem;
+    transform:translate(-50%,-50%);
+}
+.end .info .endText6:hover{
+    cursor: pointer;
+    color:#8400ff;
 }

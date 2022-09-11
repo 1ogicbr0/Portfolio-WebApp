@@ -1,7 +1,9 @@
+import AboutInfo from "../components/About/AboutInfo";
 
-
-const About = () => {
-    return <div>About</div>
+const About:React.FC = () => {
+    return (<>
+    <AboutInfo />
+    </>)
 }
 
 export default About;

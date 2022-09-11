@@ -189,10 +189,10 @@ const MainInfo = () => {
           <div className={styles.endText3} id="endText2">way to solve a complex-problem, when stuck in it.</div>
           <div className={styles.endText4} id="endText3">Creating extraordinary websites using different tecnologies</div>
           <div className={styles.endText5} id="endText4">Learning about new technologies to find bugs and secure them.</div>
+          <div className={styles.endText6} id="endText6">Contact Me</div>
         </div>
         </div>
       </div>
-      <div>END</div>
     </div>
   );
 };

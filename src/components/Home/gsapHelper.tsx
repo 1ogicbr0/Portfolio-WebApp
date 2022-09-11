@@ -60,13 +60,11 @@ export const gsapStartGoUp:Function = () => {
   t1.to("#startText4", {
     opacity: 0,
     translateY:-100,
-    delay:1,
     duration: 1,
   });
   t1.to("#line1", {
     translateX:-100,
     opacity: 0,
-    duration: 1,
   });
   
 }
@@ -151,7 +149,6 @@ export const gsapEndGoUp:Function = () => {
     trigger:"#rightEnd",
     start: "150 center",
     end: "+=600",
-    markers:true,
     scrub: 5,
     pin: "#end",
     toggleActions: "restart pause reverse pause",
@@ -214,5 +211,15 @@ export const gsapEndGoUp:Function = () => {
     opacity: 0,
     duration: 1,
   });
+  t1.fromTo("#endText6",{
+    delay:1,
+    scale: 0,
+    opacity: 0,
+    duration: 2,
+  },{
+    scale: 1,
+    opacity: 1,
+    duration: 2,
+  })
   
 }
