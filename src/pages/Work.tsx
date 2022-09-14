@@ -1,7 +1,10 @@
+import IndexWork from '../components/Work/IndexWork'
 
-
-const Work = () => {
-    return <div>Work</div>
+const Work:React.FC = () => {
+    return (
+    <>
+    <IndexWork />
+    </>)
 }
 
 export default Work;

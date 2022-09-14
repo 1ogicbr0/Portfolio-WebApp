@@ -1,0 +1,17 @@
+.mainIndexWork{
+    background-color:#0e1212;
+    height:60rem;
+    padding: 2rem;
+}
+
+.mainIndexWork .heading {
+    padding:1rem;
+    text-align:center;
+    width:100%;
+    font-size: 3rem;
+    letter-spacing:-0.1rem;
+    word-spacing:-0.2rem;
+    font-family: 'Quicksand', monospace;
+    font-weight:1000;
+    color:#639cd9;
+}

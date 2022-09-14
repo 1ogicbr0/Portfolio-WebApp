@@ -1,8 +1,8 @@
 .skillsTitle{
     font-family: "Share Tech Mono", monospace;
-    margin-top:2rem;
+    margin-top:3rem;
     font-weight:1000;
-    font-size:3rem;
+    font-size:2.7rem;
 }
 
 .skills{
@@ -10,10 +10,10 @@
     display:flex;
     font-size: 1.2rem;
     width: 100%;
+    font-weight:1000;
     letter-spacing:0.2rem;
     word-spacing: -0.4rem;
     color:grey;
-    font-weight: 1000;
     margin-top:1rem;
     justify-content:start;
 }

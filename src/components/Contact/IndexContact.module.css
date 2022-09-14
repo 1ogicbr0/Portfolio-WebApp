@@ -1,0 +1,37 @@
+.mainIndexContact{
+    background-color:#0e1212;
+    height:60rem;
+    padding: 2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    font-weight:1000;
+    font-family: 'Quicksand', monospace;
+    user-select: none;
+}
+.mainIndexContact div{
+}
+.mainIndexContact .heading{
+    padding: 1rem;
+    font-size:3.5rem;
+    color:#639cd9;
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.mainIndexContact .text1 , .text2{
+    padding: 2.5rem;
+    font-size:1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.mainIndexContact .social{
+    display: flex;
+}
+
+.text2 span{
+    color:#6fda44ca;
+    letter-spacing: 0rem;
+    font-size:1.8rem;
+}

@@ -1,17 +1,19 @@
 import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import {MotionPathPlugin} from "gsap/MotionPathPlugin"
 
 
 export const gsapStartGoUp:Function = () => {
   const t1 = gsap.timeline({scrollTrigger: {
-    trigger:"#rightStart",
-    start: "190 center",
-    end: "+=600",
-    scrub: 5,
-    pin: "#start",
+    trigger:"#right",
+    start: "center center",
+    end: "4000 center",
+    scrub: 2,
+    pin: "#div",
     toggleActions: "restart pause reverse pause",
   }});
   t1.from("#line1", {
-    translateX:-100,
+    translateX:-60,
     opacity: 0,
     duration: 3,
   });
@@ -63,26 +65,16 @@ export const gsapStartGoUp:Function = () => {
     duration: 1,
   });
   t1.to("#line1", {
-    translateX:-100,
+    translateX:-80,
+    duration: 2,
     opacity: 0,
+
   });
-  
-}
 
-
-
-
-export const gsapMidGoUp:Function = () => {
-  const t1 = gsap.timeline({scrollTrigger: {
-    trigger:"#rightMid",
-    start: "50 center",
-    end: "+=600",
-    scrub: 5,
-    pin: "#mid",
-    toggleActions: "restart pause reverse pause",
-  }});
+  //MID
   t1.from("#line2", {
-    translateX:-100,
+    delay:2,
+    translateX:-60,
     opacity: 0,
     duration: 3,
   });
@@ -135,26 +127,14 @@ export const gsapMidGoUp:Function = () => {
     duration: 1,
   });
   t1.to("#line2", {
-    translateX:-100,
+    translateX:-80,
     opacity: 0,
-    duration: 1,
+    duration: 2,
   });
-  
-}
 
-
-
-export const gsapEndGoUp:Function = () => {
-  const t1 = gsap.timeline({scrollTrigger: {
-    trigger:"#rightEnd",
-    start: "150 center",
-    end: "+=600",
-    scrub: 5,
-    pin: "#end",
-    toggleActions: "restart pause reverse pause",
-  }});
+  //END
   t1.from("#line3", {
-    translateX:-100,
+    translateX:-60,
     opacity: 0,
     duration: 3,
   });
@@ -207,12 +187,11 @@ export const gsapEndGoUp:Function = () => {
     duration: 1,
   });
   t1.to("#line3", {
-    translateX:-100,
+    translateX:-80,
     opacity: 0,
-    duration: 1,
+    duration: 2,
   });
   t1.fromTo("#endText6",{
-    delay:1,
     scale: 0,
     opacity: 0,
     duration: 2,
@@ -223,3 +202,4 @@ export const gsapEndGoUp:Function = () => {
   })
   
 }
+

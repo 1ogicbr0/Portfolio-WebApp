@@ -1,7 +1,8 @@
+import IndexContact from "../components/Contact/IndexContact";
 
 
-const Contact = () => {
-    return <div>Contact</div>
+const Contact:React.FC = () => {
+    return <><IndexContact/></>
 }
 
 export default Contact;

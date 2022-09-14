@@ -1,0 +1,44 @@
+.socialMedia{
+    display:flex;
+    justify-content:start;
+    gap: 0.7rem;
+}
+
+.socialMedia div {
+    cursor: pointer;
+}
+
+.socialMedia div:hover {
+    cursor: pointer;
+    filter: invert(11%) sepia(100%) saturate(6348%) hue-rotate(272deg) brightness(99%) contrast(124%);
+
+}
+
+.socialMedia .github{
+    width:2.5rem;
+    height: 2.5rem;
+    background-image: url("../../assets/github.svg");
+    background-repeat: no-repeat;
+    background-position:contain;
+    filter:brightness(1) contrast(1) invert(1) ;
+    filter: invert(34%) sepia(67%) saturate(1589%) hue-rotate(186deg) brightness(84%) contrast(98%);   
+    display: inline-block;
+}
+
+.socialMedia .linkedIn{    
+    width:2.5rem;
+    height: 2.5rem;
+    background-image: url("../../assets/linkedin.svg");
+    filter: invert(34%) sepia(67%) saturate(1589%) hue-rotate(186deg) brightness(84%) contrast(98%);   
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.socialMedia .twitter{    
+    width:2.5rem;
+    height: 2.5rem;
+    background-image: url("../../assets/square-twitter.svg");
+    filter: invert(34%) sepia(67%) saturate(1589%) hue-rotate(186deg) brightness(84%) contrast(98%);   
+    display: inline-block;
+    background-repeat: no-repeat;
+}

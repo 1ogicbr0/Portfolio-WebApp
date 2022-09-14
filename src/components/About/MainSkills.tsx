@@ -16,7 +16,7 @@ return <>
                     <div className={styles.skills3}>
                         <div>JavaScript, CSS, HTML,</div>
                         <div>React, GSAP, TypeScript,</div>
-                        <div>Node, MongoDB, Firebase</div>
+                        <div>NodeJs, MongoDB, Firebase</div>
                     </div>
                 </div>
 </>

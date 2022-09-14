@@ -1,0 +1,54 @@
+
+.work{
+    font-family: "Share Tech Mono", monospace;
+    margin-top:2rem;
+    margin-bottom:3rem;
+    user-select:none;
+}
+.workHeading{
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:-0.1rem;
+    word-spacing:-0.2rem;
+    color:#0A66C2;
+}
+
+.workDescription{
+    font-size:1rem;
+    font-family: 'Quicksand', monospace;
+    letter-spacing:0.1rem;
+    font-weight:700;
+    color:#c2c2c2;
+    margin-top:0.5rem
+}
+
+.workDescription span{
+    display:flex;   
+    flex-direction:column;
+    height: 2rem;
+}
+
+.workLink{
+    margin-top:0.5rem;
+    letter-spacing:0.1rem;
+    display:flex;
+    gap:1rem;
+}
+
+.workLink a{
+    text-decoration: none;
+    font-family: 'Quicksand', monospace;
+    font-weight:1000;
+    color:rgb(255, 255, 255)
+}
+.workLink a span{
+    border-bottom: solid 0.1rem white;
+    }
+
+    .workLink a span:hover{
+        transition-duration:0.5s ;
+        border-bottom: solid 0.1rem  #0A66C2;
+    color:#0A66C2;
+        
+        ;
+        }
