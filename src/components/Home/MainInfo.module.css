@@ -60,7 +60,7 @@
   @keyframes scroll {
     0% { opacity: 0; }
     10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15rem); opacity: 0.;}
+    100% { transform: translateY(15rem); opacity: 0;}
   }
 /*  */
 
@@ -74,7 +74,6 @@ padding:2rem;
 .div {
     display:flex;
     height:80rem;
-
 }
 .div .left{
     width:20%;
@@ -166,11 +165,13 @@ padding:2rem;
     word-spacing:-0.5rem;
 }
 .mid .infoMid .midText2{
+    width:80rem;
+    height:3rem;
     word-spacing:-0.5rem;
     font-size:3.5rem
 }
 .mid .infoMid .midText3{
-    padding-top:1rem;
+    padding-top:2rem;
     padding-bottom:1rem;
     font-size:2.3rem
 }
@@ -188,8 +189,7 @@ padding:2rem;
     align-items:start;
 }
 .end .infoEnd .endText1,.end .infoEnd .endText2,.end .infoEnd .endText4{
-    padding-top:3rem;
-    padding-bottom:1rem;
+    padding-bottom:2rem;
 }
 .end .infoEnd .endText1{
     font-family: 'Share Tech Mono',monospace ;
@@ -197,13 +197,14 @@ padding:2rem;
     letter-spacing:-0.3rem;
     font-size: 6rem;
     font-weight: 1000;
+    margin-bottom:2rem;
 }
 .end .infoEnd .endText2{
-    margin-bottom: 0.3rem;
+    font-size: 2.7rem;   
+    width:85rem;
+    line-height: 3rem;
 }
-.end .infoEnd .endText2, .end .infoEnd .endText3{
-    font-size: 2.7rem;
-}
+
 .end .infoEnd .endText4{
     font-size: 2.7rem;
 }
@@ -218,6 +219,7 @@ padding:2rem;
     user-select: none;
     position:absolute;
     top:50%;
+    left:30%;
     font-weight: 1000;
     font-family: 'Share Tech Mono',monospace ;
     word-spacing: -1rem;
@@ -233,8 +235,624 @@ padding:2rem;
 
 .divAnimate{
     position:fixed;
-    height:50rem;
+    height:40rem;
     width:40rem;
     top: 5%;
     left:0%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .title{
+        font-size: 2rem;
+        padding:0rem 1rem 0rem 1rem;
+        line-height: 2rem;
+    }
+
+    .scroll-downs {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width :34px;
+        height: 55px;
+      }
+      .mousey {
+        background-color:#121825;
+        box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
+        width: 14rem;
+        height: 23rem;
+        padding: 2rem 2rem;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10rem;
+        opacity: 0.75;
+        box-sizing: content-box;
+        display: flex;
+        justify-content:center;
+      }
+      .scroller {
+        font-size: 5rem;
+        margin-top:1rem;
+        justify-content:center;
+        height:10rem;
+        animation-name: scroll;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.9);
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(12rem); opacity: 0;}
+      }
+
+
+      .div{
+        height:60rem;
+        }
+    
+        /* Start */
+        .div .left{
+            display:none;
+        }
+        .start .infoStart {
+            transform:translateY(3rem) translateX(10rem);
+        }
+        .start .introStart {
+            letter-spacing:0rem;
+            font-size: 6rem;
+            gap:1rem;
+            height:2.5rem;
+        }
+            
+        .start .infoStart .nameStart{
+            margin-left:0rem;
+            font-size: 1.6rem;
+            gap:0.5rem;
+            letter-spacing:0.1rem;
+            margin-top : 1.5rem;
+        }
+        .start .infoStart  .fieldWeb, .start .infoStart  .fieldCyber {
+            margin-left:0rem;
+            color:rgb(92, 95, 95);
+            font-size: 1.2rem;
+            font-weight: 1000;
+        }
+        .start .infoStart  .fieldWeb {
+            margin-top : 1rem;
+        }
+        .start .infoStart  .fieldCyber {
+            margin-top : 0.2rem;
+        }
+    
+        /* Mid */
+        
+        .mid {
+            display:flex;
+            align-items: center;
+            font-family: "Roboto Mono", monospace;
+            letter-spacing:-2.2px;
+            font-size:32px;
+        }
+        .mid .infoMid {
+            width:43rem;
+            height:auto;
+            transform:translateY(4rem) translateX(10rem);
+        }
+        
+        .mid .infoMid .midText1,.mid .infoMid .midText2,.mid .infoMid .midText3,.mid .infoMid .midText4{
+            padding-top:0.2rem;
+            padding-bottom:1rem;
+        }
+        
+        .mid .infoMid .midText1{
+            display:flex;
+            flex-wrap: wrap;
+            gap:1rem;
+            font-size:2.5rem;
+            letter-spacing:-0.3px;
+            word-spacing: 0rem;
+        }
+        .mid .infoMid .midText2{
+            word-spacing:0rem;
+            letter-spacing:-0.5px;
+            font-size:1.7rem;            
+            width:43rem;
+            height:2.7rem;
+            
+        }
+        .mid .infoMid .midText3{
+            width:43rem;
+            letter-spacing:-1.7px;
+            font-size:1.5rem;
+        }
+        .mid .infoMid .midText4{
+            width:43rem;
+            line-height:1.7rem;
+            letter-spacing:-0.3px;
+            word-spacing:-0.1rem;
+            font-size:1.4rem
+        }
+    
+        /* END */
+        .end {
+            letter-spacing:0.1rem;
+            transform:translateY(5rem) translateX(10rem);
+            width:20rem;
+            padding-right:0rem;
+        }
+    
+        .end .infoEnd .endText1,.end .infoEnd .endText2,.end .infoEnd .endText4{
+            padding-top:0rem;
+            padding-bottom:0.5rem;
+            width:43rem;
+        }
+        .end .infoEnd .endText1{
+            letter-spacing:-0.3rem;
+            font-size: 4rem;
+            padding-bottom:0rem;
+            font-weight: 1000;
+        }
+        .end .infoEnd .endText2{
+            font-size: 1.5rem;
+            width:43rem;
+            line-height: 1.5rem;
+        }
+        .end .infoEnd .endText4{
+            font-size: 1.5rem;   
+            line-height: 1.5rem;
+            padding-top:0rem;
+        }
+        .end .infoEnd .endText5{
+            padding-top:0rem;
+            line-height: 1.5rem;
+            font-size: 1.5rem;   
+        }
+        
+        .end .infoEnd .endText6{
+            scale: 0;
+            user-select: none;
+            position: absolute;
+            top:50%;
+            left:0%;
+            overflow-block:inherit;
+            font-weight: 1000;
+            font-family: 'Share Tech Mono',monospace ;
+            word-spacing: -1rem;
+            letter-spacing:-0.4rem;
+            width:43rem;
+            height:6rem;
+            padding:0rem;
+            font-size: 6rem;
+            transform:translate(-50%,-50%);
+        }
+        .end .infoEnd .endText6:hover{
+            cursor: pointer;
+            color:#8400ff;
+        }
+        
+        .divAnimate{
+            padding:0;
+            position:fixed;
+            height:60rem;
+            width:25rem;
+            top: 0%;
+            left:0%;
+        }
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+    .title{
+        font-size: 2rem;
+        padding:0rem 1rem 0rem 1rem;
+        line-height: 2rem;
+    }
+
+    .scroll-downs {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width :34px;
+        height: 55px;
+      }
+      .mousey {
+        background-color:#121825;
+        box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
+        width: 14rem;
+        height: 23rem;
+        padding: 2rem 2rem;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10rem;
+        opacity: 0.75;
+        box-sizing: content-box;
+        display: flex;
+        justify-content:center;
+      }
+      .scroller {
+        font-size: 5rem;
+        margin-top:1rem;
+        justify-content:center;
+        height:10rem;
+        animation-name: scroll;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.9);
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(12rem); opacity: 0;}
+      }
+
+
+      .div{
+        height:60rem;
+        }
+    
+        /* Start */
+        .div .left{
+            display:none;
+        }
+        .start .infoStart {
+            transform:translateY(3rem) translateX(10rem);
+        }
+        .start .introStart {
+            letter-spacing:0rem;
+            font-size: 5rem;
+            gap:1rem;
+            height:2.5rem;
+        }
+            
+        .start .infoStart .nameStart{
+            margin-left:0rem;
+            font-size: 1.4rem;
+            gap:0.5rem;
+            letter-spacing:0.1rem;
+            margin-top : 1.5rem;
+        }
+        .start .infoStart  .fieldWeb, .start .infoStart  .fieldCyber {
+            margin-left:0rem;
+            color:rgb(92, 95, 95);
+            font-size: 1.2rem;
+            font-weight: 1000;
+        }
+        .start .infoStart  .fieldWeb {
+            margin-top : 0.6rem;
+        }
+        .start .infoStart  .fieldCyber {
+            margin-top : 0rem;
+        }
+    
+        /* Mid */
+        
+        .mid {
+            display:flex;
+            align-items: center;
+            font-family: "Roboto Mono", monospace;
+            letter-spacing:-2.2px;
+            font-size:32px;
+        }
+        .mid .infoMid {
+            width:30rem;
+            height:auto;
+            transform:translateY(4rem) translateX(10rem);
+        }
+        
+        .mid .infoMid .midText1,.mid .infoMid .midText2,.mid .infoMid .midText3,.mid .infoMid .midText4{
+            padding-top:0.2rem;
+            padding-bottom:0.8rem;
+        }
+        
+        .mid .infoMid .midText1{
+            display:flex;
+            flex-wrap: wrap;
+            gap:0.4rem;
+            font-size:2rem;
+            letter-spacing:-0.3px;
+            word-spacing: 0rem;
+        }
+        .mid .infoMid .midText2{
+            word-spacing:0rem;
+            letter-spacing:-0.5px;
+            font-size:1.5rem;            
+            width:30rem;
+            height:2.5rem;
+            
+        }
+        .mid .infoMid .midText3{
+            width:30rem;
+            letter-spacing:-1.7px;
+            font-size:1.3rem;
+        }
+        .mid .infoMid .midText4{
+            width:30rem;
+            line-height:1.7rem;
+            letter-spacing:-0.3px;
+            word-spacing:-0.1rem;
+            font-size:1.4rem
+        }
+    
+        /* END */
+        .end {
+            letter-spacing:0.1rem;
+            transform:translateY(5rem) translateX(10rem);
+            width:20rem;
+            padding-right:0rem;
+        }
+    
+        .end .infoEnd .endText1,.end .infoEnd .endText2,.end .infoEnd .endText4{
+            padding-top:0rem;
+            padding-bottom:0.5rem;
+            width:30rem;
+        }
+        .end .infoEnd .endText1{
+            letter-spacing:-0.3rem;
+            font-size: 4rem;
+            padding-bottom:0rem;
+            font-weight: 1000;
+        }
+        .end .infoEnd .endText2{
+            font-size: 1.5rem;
+            width:30rem;
+            line-height: 1.5rem;
+        }
+        .end .infoEnd .endText4{
+            font-size: 1.5rem;   
+            line-height: 1.5rem;
+            padding-top:0rem;
+        }
+        .end .infoEnd .endText5{
+            padding-top:0rem;
+            line-height: 1.5rem;
+            font-size: 1.5rem;   
+        }
+        
+        .end .infoEnd .endText6{
+            scale: 0;
+            user-select: none;
+            position: absolute;
+            top:50%;
+            left:0%;
+            overflow-block:inherit;
+            font-weight: 1000;
+            font-family: 'Share Tech Mono',monospace ;
+            word-spacing: -1rem;
+            letter-spacing:-0.4rem;
+            width:30rem;
+            height:6rem;
+            padding:0rem;
+            font-size: 5rem;
+            transform:translate(-50%,-50%);
+        }
+        .end .infoEnd .endText6:hover{
+            cursor: pointer;
+            color:#8400ff;
+        }
+        
+        .divAnimate{
+            padding:0;
+            position:fixed;
+            height:60rem;
+            width:25rem;
+            top: 0%;
+            left:0%;
+        }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .title{
+        font-size: 1.7rem;
+        padding:0rem 1rem 0rem 1rem;
+    }
+
+    .scroll-downs {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width :34px;
+        height: 55px;
+      }
+      .mousey {
+        background-color:#121825;
+        box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
+        width: 10rem;
+        height: 20rem;
+        padding: 2rem 2rem;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10rem;
+        opacity: 0.75;
+        box-sizing: content-box;
+        display: flex;
+        justify-content:center;
+      }
+      .scroller {
+        font-size: 5rem;
+        margin-top:1rem;
+        justify-content:center;
+        height:10rem;
+        animation-name: scroll;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.9);
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(10rem); opacity: 0;}
+      }
+    /*  */
+
+    .div{
+    height:60.9rem;
+    }
+
+    /* Start */
+    .div .left{
+        display:none;
+    }
+    .start .infoStart {
+        transform:translateY(2rem) translateX(5rem);
+    }
+    .start .introStart {
+        letter-spacing:0rem;
+        font-size: 3rem;
+        gap:1rem;
+        height:2.5rem;
+    }
+        
+    .start .infoStart .nameStart{
+        margin-left:0rem;
+        font-size: 1.3rem;
+        gap:0.5rem;
+        letter-spacing:0.1rem;
+        margin-top : 0.5rem;
+    }
+    .start .infoStart  .fieldWeb, .start .infoStart  .fieldCyber {
+        margin-left:0rem;
+        color:rgb(92, 95, 95);
+        font-size: 1rem;
+    
+    }
+    .start .infoStart  .fieldWeb {
+        margin-top : 0.6rem;
+    }
+    .start .infoStart  .fieldCyber {
+        margin-top : -0.2rem;
+    }
+
+    /* Mid */
+    
+    .mid {
+        display:flex;
+        align-items: center;
+        font-family: "Roboto Mono", monospace;
+        letter-spacing:-2.2px;
+        font-size:32px;
+        width:20rem;
+    }
+    .mid .infoMid {
+        height:auto;
+        transform:translateY(4rem) translateX(4.5rem);
+    }
+    
+    .mid .infoMid .midText1,.mid .infoMid .midText2,.mid .infoMid .midText3,.mid .infoMid .midText4{
+        padding-top:0.2rem;
+        padding-bottom:0rem;
+        width:20rem;
+    }
+    
+    .mid .infoMid .midText1{
+        display:flex;
+        flex-wrap: wrap;
+        gap:0.4rem;
+        font-size:1.2rem;
+        letter-spacing:-0.3px;
+        word-spacing: 0rem;
+    }
+    .mid .infoMid .midText2{
+        word-spacing:0rem;
+        letter-spacing:-0.5px;
+        font-size:1rem;
+        height:1.5rem;
+        
+    }
+    .mid .infoMid .midText3{
+        width:19rem;
+        letter-spacing:-1.7px;
+        font-size:1rem;
+    }
+    .mid .infoMid .midText4{
+        width:19rem;
+        line-height:1rem;
+        letter-spacing:-0.3px;
+        word-spacing:-0.1rem;
+        font-size:1rem
+    }
+
+    /* END */
+    .end {
+        letter-spacing:0.1rem;
+        transform:translateY(0rem) translateX(4rem);
+        padding-right:0rem;
+    }
+
+    .end .infoEnd .endText1,.end .infoEnd .endText2,.end .infoEnd .endText4{
+        padding-top:0rem;
+        padding-bottom:0.5rem;
+        width:20rem;
+    }
+    .end .infoEnd .endText1{
+        font-family: 'Share Tech Mono',monospace ;
+        color:#8400ff;
+        text-align: center;
+        letter-spacing:-0.3rem;
+        font-size: 3rem;
+        padding-bottom:0rem;
+        font-weight: 1000;
+    }
+    .end .infoEnd .endText2{
+        font-size: 1rem;   
+        width:20rem;
+        line-height: 1rem;
+    }
+    .end .infoEnd .endText4{
+        font-size: 1rem;   
+        line-height: 1rem;
+        padding-top:0rem;
+    }
+    .end .infoEnd .endText5{
+        padding-top:0rem;
+        line-height: 1rem;
+        font-size: 1rem;   
+    }
+    
+    .end .infoEnd .endText6{
+        scale: 0;
+        user-select: none;
+        position: absolute;
+        top:50%;
+        left:0%;
+        overflow-block:inherit;
+        font-weight: 1000;
+        font-family: 'Share Tech Mono',monospace ;
+        word-spacing: -1rem;
+        letter-spacing:-0.4rem;
+        width:20rem;
+        height:6rem;
+        padding:0rem;
+        font-size: 4rem;
+        transform:translate(-50%,-50%);
+    }
+    .end .infoEnd .endText6:hover{
+        cursor: pointer;
+        color:#8400ff;
+    }
+    
+    .divAnimate{
+        padding:0;
+        position:fixed;
+        height:64rem;
+        width:20rem;
+        top: 0%;
+        left:0%;
+    }
+        
 }

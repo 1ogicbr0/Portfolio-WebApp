@@ -9,12 +9,12 @@ const IndexContact =() => {
     <div className={styles.mainIndexContact}>
     <div className={styles.heading}>Contact me</div>
     <div className={styles.text1}>I'd Love to hear from you!</div>
-    <Button animated inverted color='purple' size="big">
+    <a href="https://instagram.com/_shehry.public?igshid=NmNmNjAwNzg="><Button animated inverted color='red' size="big">
       <Button.Content visible>Get in Touch</Button.Content>
       <Button.Content hidden>
-        <Icon name='mail' />
+        <Icon name='instagram' />
       </Button.Content>
-    </Button>
+    </Button></a> 
     <div className={styles.text2}>Or, Hire me on <span className={styles.upwork}>Upwork</span></div>
     <div className={styles.social}><SocialMedias/></div>
  

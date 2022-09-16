@@ -45,8 +45,8 @@ const PathAnimation: React.FC = () => {
   <path className="line04 line" d="M 10 800  600 800" ></path>
   <path className="line05 line" d="M 10 1000  600 1000" ></path>
   <text className="text01" x="70" y="230">Introduction</text>
-  <text className="text02" x="70" y="390">Background</text>
-  <text className="text03" x="90" y="550">Aim</text>
+  <text className="text02" x="70" y="480">Background</text>
+  <text className="text03" x="120" y="1030">Aim</text>
 
   <path className="theLine" 
         d="M -5,0

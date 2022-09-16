@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 library.add(faR);
 
 const MainInfo = () => {
+
   
   let NameTypeWrite = (<Typewriter
     options={{
@@ -176,8 +177,7 @@ const MainInfo = () => {
         <div className={styles.end} >
           <div className={styles.infoEnd}>
           <div className={styles.endText1} id="endText1">Motive<span style={{color:'#8400ff'}}>?</span></div>
-          <div className={styles.endText2} id="endText2">The main thing that motivates me is to figure out most efficient</div>
-          <div className={styles.endText3} id="endText2">way to solve a complex-problem, when stuck in it.</div>
+          <div className={styles.endText2} id="endText2">The main thing that motivates me is to figure out most efficient way to solve a complex-problem, when stuck in it.</div>
           <div className={styles.endText4} id="endText3">Creating extraordinary websites using different tecnologies</div>
           <div className={styles.endText5} id="endText4">Learning about new technologies to find bugs and secure them.</div>
           <div className={styles.endText6} id="endText6"><Link to="/contact">Contact Me</Link></div> 

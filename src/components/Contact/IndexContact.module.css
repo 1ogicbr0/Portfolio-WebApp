@@ -35,3 +35,12 @@
     letter-spacing: 0rem;
     font-size:1.8rem;
 }
+
+.mainIndexContact a Button{
+    display:flex;
+    justify-content:center;
+}
+
+.icon{
+    display:flex;
+}

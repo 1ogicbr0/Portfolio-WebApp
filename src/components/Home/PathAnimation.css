@@ -1,6 +1,6 @@
 
 svg {
-    max-width: 440px;
+    max-width: 400px;
     overflow: visible;
     margin-top: 10vh;
   }
@@ -35,3 +35,21 @@ svg {
 
   }
 
+  @media screen and (max-width: 400px) {
+    svg {
+      max-width: 300px;
+      overflow: visible;
+      margin-top: 10vh;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 800) {
+    svg {
+      max-width: 350px;
+      overflow: visible;
+      margin-top: 10vh;
+    }
+    
+  }

@@ -30,7 +30,7 @@
     gap: 1.5rem;
     justify-content:end;
     font-size:0.8rem;
-    letter-spacing:0.1rem;
+    letter-spacing:0.2rem;
 }
 .links .navlink{
     color:white;
@@ -46,3 +46,4 @@
     color:aqua;
     cursor: pointer;
 }
+

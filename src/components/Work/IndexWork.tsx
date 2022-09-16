@@ -29,7 +29,7 @@ const Work1 = () => {
         />
         <WorkComponent
           title="Camping WebApp - NodeJs MongoDB ExpressJs"
-          desc1="Camping Website that uses CRUD feature. Users can view camps"
+          desc1="Camping Website that uses CRUD feature. Users can view campus"
           desc2="Adding Camp pictures and Adding review by campers"
           gitLink="https://github.com/1ogicbr0/YelpCamp-Website"
         />
