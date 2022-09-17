@@ -44,3 +44,38 @@
 .icon{
     display:flex;
 }
+@media screen and (max-width: 600px) {
+    .mainIndexContact .heading{
+        padding: 0.5rem;
+        font-size:3rem;
+        font-family: 'Michroma', sans-serif;
+        letter-spacing: 0.2rem;
+    }
+    .mainIndexContact .text1 , .text2{
+        font-size:1.2rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .mainIndexContact{
+        padding-top:4rem;
+        background-color:#0e1212;
+        height:40rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+    }
+    .mainIndexContact .heading{
+        padding: 0.5rem;
+        font-size:1.8rem;
+        font-family: 'Michroma', sans-serif;
+        letter-spacing: 0.2rem;
+    }
+    .mainIndexContact .text1 , .text2{
+        padding:  2rem 1.5rem 2rem 1.5rem;
+        font-size:1rem;
+        letter-spacing: 0.2rem;
+    }
+}

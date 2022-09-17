@@ -1,3 +1,4 @@
+
 .mainAboutInfo{
     background-color:#0e1212;
     height:100%;
@@ -61,9 +62,198 @@
     font-family: 'Anonymous Pro', sans-serif, monospace;
     letter-spacing:0.1rem;
     font-size: 1.7rem;
+    line-height:1.7rem;
     color:#639cd9;
 }
 .info .pakistan{
     margin-top:0.5rem;
 }
 
+@media screen and (max-width: 800px) {
+    .myImage{
+        width:35rem;
+        height:30rem;
+    }
+    .aboutMe{
+        font-size:4rem;
+        }
+    .aboutMe .leftAboutMe{
+        width:25%;
+    }
+    .aboutMe .rightAboutMe{
+        width:75%;
+    }
+    .aboutMe .rightAboutMe .title{
+        margin-top:25rem;
+        font-weight:1000;
+        margin-bottom:2rem;
+    }
+    .aboutMe .title .shehryaar{
+        color:#0A66C2;
+        font-family: 'Roboto Mono', monospace;
+        word-spacing:-2rem;
+        font-weight: 100;
+    }
+    
+    .info{
+        width:90%;
+        margin-top:1rem;
+        margin-left: 0.3rem;
+        font-family: 'Anonymous Pro', sans-serif, monospace;
+        letter-spacing:0.1rem;
+        font-size: 1.2rem;
+        font-weight: 1000;
+        word-spacing:-0.2rem;
+        line-height:1.7rem;
+        color:#639cd9;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .myImage{
+        border-radius: 60rem;
+        top:10rem;
+        left:0%;
+        position:absolute;
+        width:100%;
+        height:4rem;
+        display:flex;
+        justify-content:center;
+    }
+    
+    .myImage img{
+        opacity:0.9;
+        object-fit:cover;
+        object-position: right;
+        border-radius: inherit;
+        width:20rem;
+        height:20rem;
+        filter:brightness(0.9) contrast(1.3) grayscale(0.4);
+        box-shadow: 0.2rem 0.2rem 1rem 0rem rgb(73, 79, 82);
+    }
+
+
+    .aboutMe{
+        font-size:3rem;
+        letter-spacing:-0.1rem;
+        height:100rem;
+        display:flex;
+        justify-content:center;
+        padding-bottom:2rem;
+        filter: brightness(1);
+        padding:2rem;
+        }
+    .aboutMe .leftAboutMe{
+        display:none;
+    }
+    .aboutMe .rightAboutMe{
+        width:100%;
+    }
+    .aboutMe .rightAboutMe .title{
+        margin-top:26rem;
+        font-weight:1000;
+        font-size:2.8rem;
+        margin-bottom:1.5rem;
+    }
+
+    .aboutMe .title .shehryaar{
+        word-spacing:-1.6rem;
+        font-weight: 100;
+    }
+    
+    .info{
+        margin-top:1rem;
+        display:flex;
+        flex-wrap:wrap; 
+        margin-left: 0rem;
+        font-family: 'Anonymous Pro', sans-serif, monospace;
+        letter-spacing:0.1rem;
+        font-size: 1.3rem;
+        line-height:1.3rem;
+        width: 100%;
+        word-spacing: -0.5rem;
+    }
+    .info .pakistan{
+        margin-top:0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .myImage{
+        border-radius: 60rem;
+        top:10rem;
+        left:0%;
+        position:absolute;
+        width:100%;
+        height:20rem;
+        display:flex;
+        justify-content:center;
+    }
+    
+    .myImage img{
+        opacity:0.9;
+        object-fit:contain;
+        object-position: right;
+        border-radius: inherit;
+        width:15rem;
+        height:15rem;
+        filter:brightness(0.9) contrast(1.3) grayscale(0.4);
+        box-shadow: 0.2rem 0.2rem 1rem 0rem rgb(73, 79, 82);
+    }
+
+
+    .aboutMe{
+        font-size:3rem;
+        letter-spacing:-0.1rem;
+        height:100rem;
+        display:flex;
+        justify-content:center;
+        padding-bottom:2rem;
+        filter: brightness(1);
+        padding:1rem;
+        }
+    .aboutMe .leftAboutMe{
+        display:none;
+    }
+    .aboutMe .rightAboutMe{
+        width:100%;
+    }
+    .aboutMe .rightAboutMe .title{
+        margin-top:22rem;
+        font-weight:1000;
+        font-size:2.7rem;
+        margin-bottom:1.5rem;
+    }
+
+    .aboutMe .title .shehryaar{
+        word-spacing:-1.6rem;
+        font-weight: 100;
+    }
+    
+    .info{
+        margin-top:1rem;
+        display:flex;
+        flex-wrap:wrap; 
+        margin-left: 0rem;
+        font-family: 'Anonymous Pro', sans-serif, monospace;
+        letter-spacing:0.1rem;
+        font-size: 1.3rem;
+        line-height:1.3rem;
+        width: 100%;
+        word-spacing: -0.5rem;
+    }
+    .info .pakistan{
+        margin-top:0.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 1690px) {
+    .aboutMe .leftAboutMe{
+        width:28%;
+    }
+    .aboutMe .rightAboutMe{
+        width:69%;
+    }
+}

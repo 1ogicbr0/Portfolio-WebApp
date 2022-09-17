@@ -1,5 +1,6 @@
 .navbar {
     display:flex;
+    justify-content:center;
     width:100%;
     height: 4rem;
     align-items:center;
@@ -12,10 +13,9 @@
     user-select: none;
 }
 .logo {
-    width: 40%;
+    width:20%;
     padding:0.2rem;
     font-size:1.5rem;
-    text-align:center;
     color:rgb(90, 164, 214);
 }
 .logo:hover {
@@ -25,25 +25,55 @@
 
 .links {
     color:aqua;
-    width: 50%;
     display: flex;
-    gap: 1.5rem;
-    justify-content:end;
+    justify-content:space-between;
     font-size:0.8rem;
     letter-spacing:0.2rem;
 }
 .links .navlink{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color:white;
     text-decoration: none;
     padding:0.5rem;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.links .navlink div{
+    border-radius: 24rem;
+    margin-top:0.2rem;
+    width: 60%;
+    height:0.2rem;
+    background-color:white;
+}
+.links .navlink div:hover{
+    visibility: visible;
 }
 .links .activeNavlink{
     text-decoration: none;
     padding:0.5rem;
-    color:aqua;
+    color:aqua;    
+    margin-left:1rem;
+    margin-right:1rem;
 }
 .links .navlink:hover {
-    color:aqua;
+    transition:1s;
     cursor: pointer;
 }
 
+@media screen and (max-width: 400px) {
+    .navbar{
+        padding:1rem;
+    }
+    .logo{
+        display:none;
+    }
+    .navbar div{
+    }
+.links .navlink{
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
+}

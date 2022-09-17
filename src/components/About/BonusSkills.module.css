@@ -31,3 +31,114 @@
 .skills3{
     width:35%;
 }
+
+@media screen and (max-width: 800px) {
+    .skillsTitle{
+        font-family: "Share Tech Mono", monospace;
+        margin-top:3rem;
+        font-weight:1000;
+        font-size:2.2rem;
+    }
+    
+    .skills{
+        font-family: 'Anonymous Pro', sans-serif, monospace;
+        display:flex;
+        font-size: 0.8rem;
+        width: 100%;
+        letter-spacing:0.2rem;
+        word-spacing: -0.2rem;
+        color:grey;
+        margin-top:1rem;
+        line-height:1rem;
+        justify-content:start;
+    }
+    
+    .skills1{
+        width:30%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+    }
+    .skills1 div,.skills2 div, .skills3 div{
+        margin-top:0.4rem;
+    }
+    .skills2{
+        width:33%;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills3{
+        padding:0rem 0.5rem 0rem 0.5rem;
+        width:35%;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .skillsTitle{
+        letter-spacing:0.1rem;
+        font-size:2rem;
+    }
+    .skills{
+        display:flex;
+        font-size: 0.9rem;
+        width: 100%;
+        font-weight:1000;
+        letter-spacing:0.1rem;
+        word-spacing: -0.4rem;
+        color:grey;
+        margin-top:1rem;
+        justify-content:start;
+        line-height:1rem;
+    }
+    .skills1{
+        width:29%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills2{
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills3{
+        width:38%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .skillsTitle{
+        letter-spacing:0.1rem;
+        font-size:2rem;
+    }
+    .skills{
+        display:flex;
+        font-size: 0.8rem;
+        width: 100%;
+        font-weight:1000;
+        letter-spacing:0.1rem;
+        word-spacing: -0.5rem;
+        color:grey;
+        margin-top:1rem;
+        justify-content:start;
+        line-height:1rem;
+    }
+    .skills1{
+        width:38%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills2{
+        width:33%;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills3{
+        width:32%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+    }
+}

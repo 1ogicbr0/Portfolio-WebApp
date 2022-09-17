@@ -22,22 +22,29 @@
 
 .skills1{
     width:30%;
-    margin-left: 0.3rem;
-    display: flex;
+    margin-left: 0rem;
+    display:flex;
     flex-direction: column;
+    justify-content:start;
 }
 .skills1 div,.skills2 div, .skills3 div{
     margin-top:0.5rem;
+
 }
 .skills2{
-    width:33%;
-    display: flex;
+    display:flex;
     flex-direction: column;
+    align-items:start;
+    justify-content:start;
+    width:33%;
+
 }
 .skills3{
     width:35%;
-    display: flex;
+    display:flex;
     flex-direction: column;
+    align-items:start;
+    justify-content:start;
 }
 
 .hackthebox{
@@ -45,31 +52,214 @@
     height:4rem;
     background-image: url("https://www.hackthebox.com/badge/image/171965");
     background-repeat: no-repeat;
+    background-position: left;
 }
 .skills1 a,.skills2 a,.skills3 a{
     margin-top:0.3rem;
 }
 .skills2 a{
-    margin-left:1rem;
-    width:3rem;
+    margin-left:0rem;
 }
 
 .bugcrowd{
-    width:3rem;
-    height:3rem;
-    background-image: url("../../assets//bugcrowd-svgrepo-com.svg");
+    width:15rem;
+    background-size: 12rem;
+    height:4rem;
+    background-image: url("https://www.bugcrowd.com/wp-content/uploads/2022/06/logo.svg");
     background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
 }
 
 .bugcrowd:hover{
-    filter: invert(34%) sepia(6%) saturate(1389%) hue-rotate(286deg) brightness(200%) contrast(98%);   
+    transition: 1s;
+    filter: invert(34%) sepia(10%) saturate(919%) hue-rotate(190deg) brightness(180%) contrast(98%);   
 }
 
 .medium{
-    width:15rem;
-    height:3rem;
+    width:10rem;
+    height:4rem;
     background-position:left;
     background-size: 10rem;
     background-image: url("../../assets//medium.png");
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+    .skillsTitle{
+        font-family: "Share Tech Mono", monospace;
+        margin-top:3rem;
+        font-weight:1000;
+        font-size:2.2rem;
+    }
+    
+    .skills{
+        font-family: 'Anonymous Pro', sans-serif, monospace;
+        display:flex;
+        font-size: 0.8rem;
+        width: 100%;
+        letter-spacing:0.2rem;
+        word-spacing: -0.2rem;
+        color:grey;
+        margin-top:1rem;
+        line-height:1rem;
+        justify-content:start;
+    }
+    
+    .skills1{
+        width:37%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+    }
+    .skills1 div,.skills2 div, .skills3 div{
+        margin-top:0.4rem;
+    }
+    .skills2{
+        width:33%;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills3{
+        padding:0rem 0.5rem 0rem 0.5rem;
+        width:28%;
+    }
+    .hackthebox{
+        width:15rem;
+        background-size: 10rem;
+        height:3rem;
+        background-position: left;
+        background-image: url("https://www.hackthebox.com/badge/image/171965");
+        background-repeat: no-repeat;
+    }
+    .bugcrowd{
+        width:10rem;
+        background-size: 7rem;
+        height:3rem;
+        background-position: center;
+    }
+    .medium{
+        width:10rem;
+        background-size: 6rem;
+        background-position: center;
+        height:3rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .skillsTitle{
+        letter-spacing:0.1rem;
+        font-size:2rem;
+    }
+    .skills{
+        display:flex;
+        font-size: 0.9rem;
+        width: 100%;
+        font-weight:1000;
+        letter-spacing:0.1rem;
+        word-spacing: -0.4rem;
+        color:grey;
+        margin-top:1rem;
+        justify-content:start;
+        line-height:1rem;
+        display:flex;
+        justify-content:center;
+
+    }
+    .skills1{
+        width:40%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills2{
+        width:34%;
+
+        text-align:center;
+        align-items:center;
+        padding:0rem 0.5rem 0rem 0.5rem;
+
+    }
+    .skills3{
+        width:29%;
+        margin-left: 0rem;
+        padding:0rem 0.5rem 0rem 0.5rem;
+        align-items:center;
+
+    }
+    .hackthebox{
+        width:15rem;
+        background-size: 10rem;
+        height:5rem;
+        background-position: left;
+        background-image: url("https://www.hackthebox.com/badge/image/171965");
+        background-repeat: no-repeat;
+    }
+    .bugcrowd{
+        width:10rem;
+        background-size: 7rem;
+        height:5rem;
+        background-position: center;
+    }
+    .medium{
+        width:10rem;
+        background-size: 6rem;
+        background-position: center;
+        height:6rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skillsTitle{
+        letter-spacing:0.1rem;
+        font-size:2rem;
+    }
+    .skills{
+        display:flex;
+        flex-direction:column;
+        font-size: 1rem;
+        width: 100%;
+        font-weight:1000;
+        letter-spacing:0.1rem;
+        word-spacing: -0.5rem;
+        color:grey;
+        margin-top:1rem;
+        line-height:1rem;
+    }
+    .skills div{
+        align-self:center;
+    }
+    .skills1{
+        width:100%;
+        margin-left: 0rem;
+    }
+    .skills2{
+        align-items:center;
+        width:100%;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    .skills3{
+        width:100%;
+        margin-left: 0rem;
+        align-items:center;
+
+    }
+    .medium{
+        width:10rem;
+        background-position: center;
+        background-size: 9rem;
+
+    }
+    .hackthebox{
+        width:100%;
+        height:4rem;
+        background-position: center;
+        background-image: url("https://www.hackthebox.com/badge/image/171965");
+        background-repeat: no-repeat;
+        background-size: 13rem;
+    }
+    .bugcrowd{
+        height:4rem;
+        background-position: center;
+    }
 }

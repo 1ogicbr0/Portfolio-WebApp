@@ -49,6 +49,32 @@
         transition-duration:0.5s ;
         border-bottom: solid 0.1rem  #0A66C2;
     color:#0A66C2;
-        
-        ;
+        }
+
+        @media screen and (max-width: 650px) {
+            .workHeading{
+                font-size:1.7rem;
+                line-height:2rem;
+            }
+            .workDescription{
+                font-size:1.1rem;
+                line-height:1.3rem;
+            }
+            .workDescription span{
+                height: 2.2rem;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .workHeading{
+                font-size:1.5rem;
+                line-height:2rem;
+            }
+            .workDescription{
+                font-size:0.9rem;
+                line-height:1rem;
+            }
+            .workDescription span{
+                height: 2.3rem;
+            }
         }

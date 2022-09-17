@@ -19,11 +19,10 @@ const Work1 = () => {
     <>
       <div className={styles.mainIndexWork}>
         <div className={styles.heading}>{HeadingTypeWrite}</div>
-        <ParticlesComponent />
         <WorkComponent
           title="RealEstate - Ecommerence Single Page WebApp"
-          desc1="A RealEstate website, where user can view the property and real estate "
-          desc2="agent can add property on rent or on sale."
+          desc1="A RealEstate website, where user can view the property and real estate."
+          desc2="Agent can add property on rent or on sale."
           gitLink="https://github.com/1ogicbr0/React-RealEstate-Website"
           deployLink="https://realestate-9f939.web.app"
         />
@@ -46,6 +45,7 @@ const Work1 = () => {
           desc2=""
         />
       </div>
+      <ParticlesComponent />
     </>
   );
 };

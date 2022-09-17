@@ -15,3 +15,10 @@
     font-weight:1000;
     color:#639cd9;
 }
+
+@media screen and (max-width: 400px) {
+    .mainIndexWork{
+    background-color:rgba(255, 0, 0, 0);
+    position:absolute;
+    }
+}
