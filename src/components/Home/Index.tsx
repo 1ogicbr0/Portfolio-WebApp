@@ -36,7 +36,7 @@ const MainInfo:React.FC<{id:string}> = (props) => {
         <div className={styles.right} id="right">
         <div className={styles.start}>
              <div className={styles.infoStart}>
-              <div className={styles.introStart} id="startText1"><span>$:~</span><span>whoami</span></div>
+              <div className={styles.introStart} id="startText1"><span>$ </span><span>whoami</span></div>
               <div className={styles.nameStart} id="startText2"><span>Muhammad</span><span>Shehryaar</span><span>Khan</span></div>
               <div className={styles.fieldWeb} id="startText3">Creative Web Developer</div>
               <div className={styles.fieldCyber} id="startText4">Bug Bounty Hunter</div>

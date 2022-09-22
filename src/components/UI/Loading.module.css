@@ -28,7 +28,7 @@
     margin:0.4rem;
     height: 4px;
     border-radius: 15px;
-    animation: progres 2s infinite linear;    
+    animation: progres 0.4s linear;    
 }
 @keyframes progres{
     0%{
