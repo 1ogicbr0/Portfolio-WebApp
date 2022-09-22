@@ -1,9 +1,13 @@
 .navbar {
     display:flex;
+    background-color: rgba(54, 24, 110, 0.411);
     justify-content:center;
-    width:100%;
-    height: 4rem;
+    align-self: center;
     align-items:center;
+    width: 80rem;
+    margin-top:1rem;
+    border-radius:20rem;
+    height: 5rem;
     /* font-family: 'Silkscreen', cursive; */
     font-family: 'Michroma', sans-serif;
     /* font-family: 'Gloria Hallelujah', cursive; */
@@ -13,10 +17,14 @@
     user-select: none;
 }
 .logo {
+    align-self: center;
     width:20%;
     padding:0.2rem;
-    font-size:1.5rem;
+    font-size:1.3rem;
     color:rgb(90, 164, 214);
+}
+.logo img{
+    max-width: 22%;
 }
 .logo:hover {
     color:aqua;
@@ -24,7 +32,7 @@
 }
 
 .links {
-    color:aqua;
+    color:rgb(90, 164, 214);
     display: flex;
     justify-content:space-between;
     font-size:0.8rem;
@@ -41,31 +49,53 @@
     margin-left:1rem;
     margin-right:1rem;
 }
-.links .navlink div{
+.links .activeNavlink div{
     border-radius: 24rem;
     margin-top:0.2rem;
-    width: 60%;
+    width: 100%;
     height:0.2rem;
     background-color:white;
 }
+
 .links .navlink div:hover{
     visibility: visible;
 }
 .links .activeNavlink{
     text-decoration: none;
     padding:0.5rem;
-    color:aqua;    
+    color:rgb(90, 164, 214);    
     margin-left:1rem;
     margin-right:1rem;
+    transition:0.5s
 }
 .links .navlink:hover {
-    transition:1s;
+    transition:1s;    
+    color:aqua;    
     cursor: pointer;
 }
-
+@media screen and (max-width: 800px) {
+    .navbar{
+        width:40rem;
+        margin-top:1.2rem;
+        height:3.7rem
+    }
+    .logo{
+        display:block;
+        font-size:1.2rem;
+    }
+    .links .navlink{
+        margin-left:0.3rem;
+        font-size:0.8rem;
+        margin-right:0.3rem;
+    }
+}
 @media screen and (max-width: 400px) {
     .navbar{
-        padding:1rem;
+        padding:2rem;
+        margin-top:0rem;
+        width:100%;
+        border-radius:0rem 0rem 2rem 2rem;
+
     }
     .logo{
         display:none;
@@ -74,6 +104,15 @@
     }
 .links .navlink{
     margin-left:0.5rem;
+    font-size:0.6rem;
     margin-right:0.5rem;
+}
+.links .activeNavlink{
+    text-decoration: none;
+    padding:0.5rem;
+    margin-left:0.5rem;
+    font-size:0.6rem;
+    margin-right:0.5rem;
+    transition:0.5s
 }
 }

@@ -1,5 +1,14 @@
 import styles from './WorkComponent.module.css';
-const WorkComponent =(props:any) => {
+interface WorkVariables {
+    title:string,
+    desc1:string,
+    desc2?:string,
+    gitLink?:string,
+    exeFile?:string,
+    deployLink?:string
+}
+
+const WorkComponent:React.FC<WorkVariables> =(props) => {
     let sourceCode = !props.gitLink ? false: true;
     let deployed = !props.deployLink ? false: true;
     let downloadable = !props.exeFile ? false: true;

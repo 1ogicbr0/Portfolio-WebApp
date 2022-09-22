@@ -4,7 +4,7 @@ const BonusSkills = () => {
                 <div className={styles.skillsTitle}>Bonus skills</div>
                 <div className={styles.skills}>
                     <div className={styles.skills1}>
-                        <div style={{color:'#8400ff'}}>Linux / Windows </div>
+                        <div style={{color:'#8400ff'}}>Linux / Windows</div>
                         <div>Kali, Debian, Ubuntu</div>
                         <div>Server Configuration</div>
                         <div>Bash Scripting</div>

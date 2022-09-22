@@ -20,10 +20,10 @@ const PathAnimation: React.FC = () => {
             ease: "elastic(2.5, 1)"
           }})
         .fromTo(".ball02, .text01", {scale:1.5},{scale:2}, 0.13) 
-        .fromTo(".ball03, .text02", {scale:1.5},{scale:2}, 0.44)
+        .fromTo(".ball03, .text02", {scale:1.5},{scale:2}, 0.43)
         .fromTo(".ball04, .text03", {scale:1.5},{scale:2.1}, 0.73)
         
-        let action = gsap.timeline({defaults: {duration: 1},
+       gsap.timeline({defaults: {duration: 1},
           scrollTrigger: {
             trigger: "#svg",
             scrub: true,

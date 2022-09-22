@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 400px) {
     .particles {
+  background: linear-gradient(#0e1212 0%, #1e1531 130%);
         right: 0rem;
         top:15%;
         overflow: hidden;

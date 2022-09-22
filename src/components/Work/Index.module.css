@@ -1,6 +1,6 @@
 .mainIndexWork{
     background-color:#0e1212;
-    height:60rem;
+    height:61rem;
     padding: 2rem;
 }
 
@@ -18,7 +18,8 @@
 
 @media screen and (max-width: 400px) {
     .mainIndexWork{
-    background-color:rgba(255, 0, 0, 0);
-    position:absolute;
+        height:61rem;
+        background: linear-gradient(#0e1212 0%, #1e1531 100%);
+        position:absolute;
     }
 }

@@ -88,7 +88,7 @@ const ParticlesComponent = () => {
         };
       
     return<>
-        <div ><Particles className={styles.particles}  options={options} init={particlesInit} /></div>
+        < ><Particles className={styles.particles}  options={options} init={particlesInit} /></>
     </>
 }
 

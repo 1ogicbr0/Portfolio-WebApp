@@ -1,6 +1,6 @@
 .mainIndexContact{
     background-color:#0e1212;
-    height:60rem;
+    height:61rem;
     padding: 2rem;
     display:flex;
     flex-direction:column;
@@ -62,7 +62,7 @@
     .mainIndexContact{
         padding-top:4rem;
         background-color:#0e1212;
-        height:40rem;
+        height:52rem;
         display:flex;
         flex-direction:column;
         justify-content:start;

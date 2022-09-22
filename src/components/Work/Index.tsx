@@ -1,10 +1,10 @@
-import styles from "./IndexWork.module.css";
+import styles from "./Index.module.css";
 import WorkComponent from "./WorkComponent";
 import Typewriter from 'typewriter-effect';
 import ParticlesComponent from "./Particles";
 
 
-const Work1 = () => {
+const Work:React.FC<any> = (props) => {
       
 
     let HeadingTypeWrite = (<Typewriter
@@ -17,7 +17,7 @@ const Work1 = () => {
 
   return (
     <>
-      <div className={styles.mainIndexWork}>
+      <div className={styles.mainIndexWork} id={props.id}>
         <div className={styles.heading}>{HeadingTypeWrite}</div>
         <WorkComponent
           title="RealEstate - Ecommerence Single Page WebApp"
@@ -42,12 +42,11 @@ const Work1 = () => {
         <WorkComponent
           title="HackTheBox - Write ups"
           desc1="Coming soon..."
-          desc2=""
         />
-      </div>
       <ParticlesComponent />
+      </div>
     </>
   );
 };
 
-export default Work1;
+export default Work;

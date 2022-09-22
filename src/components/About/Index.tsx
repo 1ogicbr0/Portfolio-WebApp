@@ -1,17 +1,16 @@
-import styles from './AboutInfo.module.css'
+import styles from './Index.module.css'
 import image from '../../assets/shehry-image-10.png';
-import MainSkills from './MainSkills';
-import BonusSkills from './BonusSkills';
 import SocialMedias from '../UI/SocialMedias';
 import ExtraProfile from './ExtraProfiles';
-const AboutInfo = () => {
+import CustomSkills from './CustomSkills';
+const AboutInfo:React.FC<any> = (props) => {
 
     return <>
-    <div className={styles.mainAboutInfo}>
-    <div  className={styles.myImage}><img src={image} alt="Shehryaar"></img></div>
-        <div className={styles.aboutMe}>
+    <div className={styles.mainAboutInfo} >
+    <div className={styles.myImage}><img src={image} alt="Shehryaar"></img></div>
+        <div  id={props.animateDescription} className={styles.aboutMe}>
             <div className={styles.leftAboutMe}></div>
-            <div className={styles.rightAboutMe}>
+            <div  className={styles.rightAboutMe}>
                 <div className={styles.title}><span className={styles.color}>abo</span>ut(<span className={styles.shehryaar}> shehryaar </span>)</div>
                 <SocialMedias />
                 <div className={styles.info}>
@@ -20,8 +19,7 @@ const AboutInfo = () => {
                     <div> situations and I have potential to grow self.</div>
                     <div className={styles.pakistan}>From <span style={{color:'green',fontWeight:'1000'}}>Pakistan</span>, based in Islamabad.</div>
                 </div>
-                <MainSkills />
-                <BonusSkills />
+                <CustomSkills />
                 <ExtraProfile />
             </div>
         </div>

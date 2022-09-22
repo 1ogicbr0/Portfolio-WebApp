@@ -1,9 +1,20 @@
-import IndexWork from '../components/Work/IndexWork'
+import {default as WorkIndex} from '../components/Work/Index'
+import {useEffect} from 'react';
+import { gsap } from "gsap";
+
 
 const Work:React.FC = () => {
+    useEffect(()=>{
+        gsap.timeline()
+        .from("#work", {
+            opacity: 0,
+            duration: 1,
+            translateY:15
+          })
+    },[])   
     return (
     <>
-    <IndexWork />
+    <WorkIndex id="work"/>
     </>)
 }
 

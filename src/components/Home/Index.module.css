@@ -2,70 +2,8 @@
     /* font-family: 'Share Tech Mono', monospace; */
     /* font-family: 'Silkscreen', cursive; */
     font-family: 'Anonymous Pro', monospace;
-    background-color:#0e1212;
+    background: linear-gradient(#0e1212 0%, #1e1531 100%);
 }
-/* Scroll Down */
-.title {
-    text-align:center;
-    font-family: 'Silkscreen' ;
-    font-weight: 550;
-    letter-spacing: -0.2rem;
-    display:flex;
-    justify-content:center;
-    margin-bottom:3rem;
-    font-size: 2.5rem;
-}
-.beforeStart{
-    height:60rem;
-    text-align:center;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-}
-.scroll-downs {
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width :34px;
-    height: 55px;
-  }
-  .mousey {
-    background-color:#121825;
-    box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
-    width: 14rem;
-    height: 26rem;
-    padding: 2rem 2rem;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 10rem;
-    opacity: 0.75;
-    box-sizing: content-box;
-    display: flex;
-    justify-content:center;
-  }
-  .scroller {
-    font-size: 5rem;
-    margin-top:1rem;
-    justify-content:center;
-    height:10rem;
-    animation-name: scroll;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.9);
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15rem); opacity: 0;}
-  }
-/*  */
-
-
-
 
 .start, .mid, .end{
 padding:2rem;
@@ -163,6 +101,13 @@ padding:2rem;
 .mid .infoMid .midText1{
     font-size:5rem;
     word-spacing:-0.5rem;
+    display:flex;
+    gap:2rem;
+}
+.mid .infoMid .midText1 div {
+    word-spacing:-0.5rem;
+
+
 }
 .mid .infoMid .midText2{
     width:80rem;
@@ -244,53 +189,6 @@ padding:2rem;
 
 
 @media screen and (max-width: 800px) {
-
-    .title{
-        font-size: 2rem;
-        padding:0rem 1rem 0rem 1rem;
-        line-height: 2rem;
-    }
-
-    .scroll-downs {
-        position: relative;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        width :34px;
-        height: 55px;
-      }
-      .mousey {
-        background-color:#121825;
-        box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
-        width: 14rem;
-        height: 23rem;
-        padding: 2rem 2rem;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 10rem;
-        opacity: 0.75;
-        box-sizing: content-box;
-        display: flex;
-        justify-content:center;
-      }
-      .scroller {
-        font-size: 5rem;
-        margin-top:1rem;
-        justify-content:center;
-        height:10rem;
-        animation-name: scroll;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(.15,.41,.69,.9);
-        animation-iteration-count: infinite;
-      }
-    
-      @keyframes scroll {
-        0% { opacity: 0; }
-        10% { transform: translateY(0); opacity: 1; }
-        100% { transform: translateY(12rem); opacity: 0;}
-      }
-
 
       .div{
         height:60rem;
@@ -450,53 +348,6 @@ padding:2rem;
 
 @media screen and (max-width: 650px) {
 
-    .title{
-        font-size: 2rem;
-        padding:0rem 1rem 0rem 1rem;
-        line-height: 2rem;
-    }
-
-    .scroll-downs {
-        position: relative;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        width :34px;
-        height: 55px;
-      }
-      .mousey {
-        background-color:#121825;
-        box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
-        width: 14rem;
-        height: 23rem;
-        padding: 2rem 2rem;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 10rem;
-        opacity: 0.75;
-        box-sizing: content-box;
-        display: flex;
-        justify-content:center;
-      }
-      .scroller {
-        font-size: 5rem;
-        margin-top:1rem;
-        justify-content:center;
-        height:10rem;
-        animation-name: scroll;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(.15,.41,.69,.9);
-        animation-iteration-count: infinite;
-      }
-    
-      @keyframes scroll {
-        0% { opacity: 0; }
-        10% { transform: translateY(0); opacity: 1; }
-        100% { transform: translateY(12rem); opacity: 0;}
-      }
-
-
       .div{
         height:60rem;
         }
@@ -654,51 +505,6 @@ padding:2rem;
 
 
 @media screen and (max-width: 400px) {
-    .title{
-        font-size: 1.7rem;
-        padding:0rem 1rem 0rem 1rem;
-    }
-
-    .scroll-downs {
-        position: relative;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        width :34px;
-        height: 55px;
-      }
-      .mousey {
-        background-color:#121825;
-        box-shadow: 0rem 0rem 10rem 0.5rem rgb(67, 84, 129);
-        width: 10rem;
-        height: 20rem;
-        padding: 2rem 2rem;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 10rem;
-        opacity: 0.75;
-        box-sizing: content-box;
-        display: flex;
-        justify-content:center;
-      }
-      .scroller {
-        font-size: 5rem;
-        margin-top:1rem;
-        justify-content:center;
-        height:10rem;
-        animation-name: scroll;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(.15,.41,.69,.9);
-        animation-iteration-count: infinite;
-      }
-    
-      @keyframes scroll {
-        0% { opacity: 0; }
-        10% { transform: translateY(0); opacity: 1; }
-        100% { transform: translateY(10rem); opacity: 0;}
-      }
-    /*  */
 
     .div{
     height:60.9rem;
@@ -849,7 +655,7 @@ padding:2rem;
     .divAnimate{
         padding:0;
         position:fixed;
-        height:64rem;
+        height:100%;
         width:20rem;
         top: 0%;
         left:0%;

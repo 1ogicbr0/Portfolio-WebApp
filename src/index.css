@@ -2,4 +2,13 @@ body {
   margin: 0;
   padding: 0;
   background-color:#0e1212;
+  background: linear-gradient(#0e1212 0%, #1e1531 100%);
+}
+
+@media screen and (max-width: 400px) {
+  
+body {
+  background: linear-gradient(#0e1212 0%, #1e1531 130%);
+
+}
 }

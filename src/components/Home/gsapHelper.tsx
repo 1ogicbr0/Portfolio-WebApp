@@ -1,9 +1,39 @@
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import {MotionPathPlugin} from "gsap/MotionPathPlugin"
+export const gsapFrontAnimationHelper:Function = () => {
+  gsap
+  .timeline()
+  .to("#title", {
+    scrollTrigger: {
+      trigger: "#title",
+      start: "0 190",
+      end: "+=20",
+      scrub: 1,
+      toggleActions: "restart pause reverse pause",
+    },
+    stagger: 1,
+    opacity: 0,
+    duration: 2,
+    translateY:-50,
+    rotateX:30
+  })
+  .to("#scroll", {
+    scrollTrigger: {
+      trigger: "#scroll",
+      start: "-60 190",
+      end: "+=400",         
+      scrub: 2,
+      toggleActions: "restart pause reverse pause",
 
+    },
+    stagger: 1,
+    rotateY: 720,
+    rotateX: 100,
+    opacity: 0,
+    duration: 3,
+  })
+}
 
-export const gsapStartGoUp:Function = () => {
+export const gsapScrollAnimationHelper:Function = () => {
   const t1 = gsap.timeline({scrollTrigger: {
     trigger:"#right",
     start: "center center",
