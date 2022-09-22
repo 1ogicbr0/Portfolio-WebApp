@@ -1,3 +1,3 @@
 # Portfolio using React and Typescript
 
-> Deploying soon...
+> <a href="https://shehryaar-portfolio.vercel.app/">Deployed here</a>
