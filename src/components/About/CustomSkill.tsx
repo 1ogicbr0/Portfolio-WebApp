@@ -1,6 +1,22 @@
 import styles from './CustomSkill.module.css'
 
-const CustomSkill:React.FC<any> = (props) => {
+interface CustomSkillsProps {
+    title:string,
+    skills1_heading?:string, 
+    skills1_a:string,
+    skills1_b:string,
+    skills1_c:string,
+    skills2_heading?:string,
+    skills2_a:string,
+    skills2_b:string,
+    skills2_c:string,
+    skills3_heading?:string,
+    skills3_a:string,
+    skills3_b:string,
+    skills3_c:string,
+}
+
+const CustomSkill:React.FC<CustomSkillsProps> = (props) => {
     const skills1_heading = !props.skills1_heading ? false : props.skills1_heading 
     const skills2_heading = !props.skills2_heading ? false : props.skills2_heading 
     const skills3_heading = !props.skills3_heading ? false : props.skills3_heading 

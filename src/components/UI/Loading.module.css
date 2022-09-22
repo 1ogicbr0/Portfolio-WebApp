@@ -1,0 +1,49 @@
+.loadingMain{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    align-self: center;
+    width: 100%;
+    height: 52rem;
+    color:wheat;
+}
+
+.loadingName{
+    padding:2rem;
+    font-size: 3rem;
+    font-family: 'Silkscreen';
+}
+.progress{
+    position: relative;
+    height: 20px;
+    width: 20%;
+    border: 2px solid #f4a261;
+    border-radius: 15px;
+}
+.progress .color{
+    position: absolute;
+    background-color: #ffffff;
+    width: 0px;
+    margin:0.4rem;
+    height: 4px;
+    border-radius: 15px;
+    animation: progres 2s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 97%;
+    }
+};

@@ -1,23 +1,28 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import Layout from './components/UI/Layout/Layout';
 import { Route, Routes  } from "react-router-dom";
-import Home from './pages/Home';
-import Work from './pages/Work';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Loading from './components/UI/Loading';
 
 
 function App() {
 
+  const HomeComponent = React.lazy(() => import('./pages/Home'))
+  const WorkComponent = React.lazy(() => import('./pages/Work'))
+  const AboutComponent = React.lazy(() => import('./pages/About'))
+  const ContactComponent = React.lazy(() => import('./pages/Contact'))
+
   return (
+      <Suspense fallback={<Loading />}>
     <Layout>
-      <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/work" element={<Work />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<HomeComponent />} />
+          <Route path="/load" element={<Loading />} />
+          <Route path="/work" element={<WorkComponent />} />
+          <Route path="/about" element={<AboutComponent />} />
+          <Route path="/contact" element={<ContactComponent />} />
+        </Routes>
     </Layout>
+      </Suspense>
   );
 }
 

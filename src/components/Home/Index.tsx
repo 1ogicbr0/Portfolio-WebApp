@@ -2,8 +2,6 @@ import styles from "./Index.module.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faR } from "@fortawesome/free-solid-svg-icons";
 import Typewriter from 'typewriter-effect';
 import {gsapScrollAnimationHelper, gsapFrontAnimationHelper} from './gsapHelper';
 import PathAnimation from "./PathAnimation";
@@ -11,11 +9,7 @@ import './PathAnimation.css';
 import { Link } from "react-router-dom";
 import UpperComponent from "./UpperMain";
 
-library.add(faR);
-
 const MainInfo:React.FC<{id:string}> = (props) => {
-
-  
   let NameTypeWrite = (<Typewriter
     options={{
       strings: ['Pakistan', 'پاکستان'],

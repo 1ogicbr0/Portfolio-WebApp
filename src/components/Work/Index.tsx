@@ -1,19 +1,19 @@
 import styles from "./Index.module.css";
 import WorkComponent from "./WorkComponent";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 import ParticlesComponent from "./Particles";
 
-
-const Work:React.FC<any> = (props) => {
-      
-
-    let HeadingTypeWrite = (<Typewriter
-        options={{
-          strings: ['Recent Work', 'My Projects'],
-          cursor: " |",
-          autoStart: true,
-          loop: true,}}/>)
-
+const Work: React.FC<any> = (props) => {
+  let HeadingTypeWrite = (
+    <Typewriter
+      options={{
+        strings: ["Recent Work", "My Projects"],
+        cursor: " |",
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  );
 
   return (
     <>
@@ -39,11 +39,10 @@ const Work:React.FC<any> = (props) => {
           gitLink="https://github.com/1ogicbr0/Cryptography-Enigma-Software/blob/main/Report.pdf"
           exeFile="https://github.com/1ogicbr0/Cryptography-Enigma-Software/raw/main/Enigma.exe"
         />
-        <WorkComponent
-          title="HackTheBox - Write ups"
-          desc1="Coming soon..."
-        />
-      <ParticlesComponent />
+        <WorkComponent 
+          title="HackTheBox - Write ups" 
+          desc1="Coming soon..." />
+        <ParticlesComponent />
       </div>
     </>
   );

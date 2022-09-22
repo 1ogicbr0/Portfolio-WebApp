@@ -1,5 +1,5 @@
 import styles from './Index.module.css'
-import image from '../../assets/shehry-image-10.png';
+import image from '../../assets/shehry-image-5.png';
 import SocialMedias from '../UI/SocialMedias';
 import ExtraProfile from './ExtraProfiles';
 import CustomSkills from './CustomSkills';
@@ -7,7 +7,7 @@ const AboutInfo:React.FC<any> = (props) => {
 
     return <>
     <div className={styles.mainAboutInfo} >
-    <div className={styles.myImage}><img src={image} alt="Shehryaar"></img></div>
+    <div className={styles.myImage}><img src={image} alt="img_shehryaar"></img></div>
         <div  id={props.animateDescription} className={styles.aboutMe}>
             <div className={styles.leftAboutMe}></div>
             <div  className={styles.rightAboutMe}>

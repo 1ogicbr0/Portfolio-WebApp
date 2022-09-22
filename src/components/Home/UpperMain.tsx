@@ -1,11 +1,9 @@
-import styles from './UpperMain.module.css'
+import styles from "./UpperMain.module.css";
 
-
-const UpperComponent:React.FC<any> = (props) => {
-
-    return(
-        <>
-        <div className={styles.beforeStart} id="beforeStart">
+const UpperComponent: React.FC<any> = (props) => {
+  return (
+    <>
+      <div className={styles.beforeStart} id="beforeStart">
         <div className={styles.title} id="title">
           Its nice to have you here ;) Scroll Down Slowly
         </div>
@@ -20,8 +18,8 @@ const UpperComponent:React.FC<any> = (props) => {
           </div>
         </div>
       </div>
-        </>
-    )
-}
+    </>
+  );
+};
 
-export default UpperComponent
+export default UpperComponent;
