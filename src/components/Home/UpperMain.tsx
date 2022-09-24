@@ -1,6 +1,6 @@
 import styles from "./UpperMain.module.css";
 
-const UpperComponent: React.FC<any> = (props) => {
+const UpperComponent: React.FC = () => {
   return (
     <>
       <div className={styles.beforeStart} id="beforeStart">

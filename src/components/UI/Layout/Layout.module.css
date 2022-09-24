@@ -1,16 +1,21 @@
 .layout {
     color:rgb(255, 255, 255);
-    height:100%;
+    background-color:rgb(175, 54, 54);
+
 }
 
 .nav {
     width: 100%;
     display: flex;
     justify-content: center;
+    position:fixed;
+    z-index:1000;
+    background-color: #0e1212;
 }
 
-/* .main{
-
-} */
+.layout .layoutmain{
+    padding-top:6.5rem;
+    background-color: #0e1212;
+}
 
 

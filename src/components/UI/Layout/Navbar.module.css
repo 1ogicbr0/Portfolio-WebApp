@@ -2,6 +2,7 @@
     display:flex;
     background-color: rgba(54, 24, 110, 0.411);
     justify-content:center;
+    position:fixed;
     align-self: center;
     align-items:center;
     width: 80rem;

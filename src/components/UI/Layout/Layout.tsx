@@ -8,7 +8,7 @@ const Layout: React.FC<any> = (props) => {
       <div className={styles.nav}>
         <Navbar />
       </div>
-      <div className={styles.main}>{props.children}</div>
+      <div className={styles.layoutmain}>{props.children}</div>
     </div>
   );
 };
