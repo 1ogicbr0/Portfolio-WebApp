@@ -17,7 +17,7 @@ const Work: React.FC<any> = (props) => {
 
   const WorkComponents = [
     {
-      title:"RealEstate - Ecommerence Single Page WebApp",
+      title:"RealEstate - Ecommerce Single Page WebApp",
       desc1:"A RealEstate website, where user can view the property and real estate.",
       desc2:"Agent can add property on rent or on sale.",
       gitLink:"https://github.com/1ogicbr0/React-RealEstate-Website",

@@ -10,8 +10,8 @@ function App() {
   const ContactComponent = React.lazy(() => import("./pages/Contact"));
 
   const RouteConponents = [
-    { path: "/", element:<HomeComponent /> },
-    { path: "/work", element:<WorkComponent /> },
+    { path: "/", element: <HomeComponent /> },
+    { path: "/work", element: <WorkComponent /> },
     { path: "/about", element: <AboutComponent /> },
     { path: "/contact", element: <ContactComponent /> },
   ];
@@ -20,8 +20,9 @@ function App() {
     <Suspense fallback={<Loading />}>
       <Layout>
         <Routes>
-        {RouteConponents.map( (props) => (<Route path={props.path} element={props.element}/>))}
-
+          {RouteConponents.map((props) => (
+            <Route path={props.path} element={props.element} />
+          ))}
         </Routes>
       </Layout>
     </Suspense>

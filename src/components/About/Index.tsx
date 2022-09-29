@@ -14,7 +14,7 @@ const AboutInfo:React.FC<any> = (props) => {
                 <div className={styles.title}><span className={styles.color}>abo</span>ut(<span className={styles.shehryaar}> shehryaar </span>)</div>
                 <SocialMedias />
                 <div className={styles.info}>
-                    <div>I am an ambitios Cyber Security Student and</div>
+                    <div>I am an ambitious Cyber Security Student and</div>
                     <div> a driven individual with the ability to adapt different</div>
                     <div> situations and I have potential to grow self.</div>
                     <div className={styles.pakistan}>From <span style={{color:'green',fontWeight:'1000'}}>Pakistan</span>, based in Islamabad.</div>
